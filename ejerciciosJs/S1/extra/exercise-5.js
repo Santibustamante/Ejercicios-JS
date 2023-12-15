@@ -8,14 +8,12 @@ const products = [
 var totalVentas = 0;
 var cantidadProductos = products.length;
 
-// Recorrer el array de productos y sumar las ventas
 for (var i = 0; i < cantidadProductos; i++) {
   totalVentas += products[i].sellCount;
 }
 
-// Calcular la media de ventas
 var mediaVentas = totalVentas / cantidadProductos;
 
-// Imprimir el total de ventas y la media en la consola
 console.log("El total de ventas es:", totalVentas);
 console.log("La media de ventas es:", mediaVentas);
+
