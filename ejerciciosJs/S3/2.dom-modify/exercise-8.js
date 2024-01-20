@@ -1,5 +1,9 @@
-const div$$ = document.querySelectorAll("div")[1];
-const p$$ = document.createElement("p");
-p$$.textContent - 'Voy en medio!';
-document.body.insertBefore(p$$, div$$);
-console.log(div$$);
+
+let miP = document.createElement('p')
+
+miP.innerText= "'Voy en medio!'"
+let position = document.querySelectorAll('div')
+
+document.body.insertBefore(miP, position[1])
+
+console.log(position[0])

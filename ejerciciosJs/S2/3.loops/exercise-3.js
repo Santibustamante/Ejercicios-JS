@@ -7,3 +7,16 @@ const placesToTravel = [
   { id: 59, name: "Madagascar" },
 ];
 
+let i = 0;
+for (let valor of placesToTravel) {
+  i++;
+  for (const valores in valor) {
+    if (valor.id == 11 || valor.id == 40) {
+      //console.log(i);
+      delete placesToTravel[i];
+      //console.log(valor);
+      placesToTravel.splice(i,1);
+    }
+    // console.log(placesToTravel.valores);
+  }
+}

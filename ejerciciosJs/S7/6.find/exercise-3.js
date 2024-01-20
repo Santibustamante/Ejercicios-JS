@@ -20,3 +20,9 @@ const mutations = [
   },
 ];
 
+const cucushumushu = aliens.find(alien => alien.name === 'Cucushumushu');
+const porompompero = mutations.find(mut => mut.name === 'Porompompero');
+cucushumushu.mutation = porompompero;
+
+console.log(cucushumushu);
+
